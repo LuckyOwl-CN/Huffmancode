@@ -4,6 +4,8 @@ public class Main {
 
     private static Scanner _Main_userinput = new Scanner(System.in);
 
+    private static HuffmanTree huffmanTree = new HuffmanTree();
+
     public static void main(String[] args) {
         Boolean _Main_exit = false;
         while(!_Main_exit){
@@ -22,6 +24,7 @@ public class Main {
                 case 1:
                     //基本要求
                     System.out.println("Run1");
+                    huffmanTree._Main_HuffmanTree();
                     break;
                 case 2:
                     //中级要求

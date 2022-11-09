@@ -17,7 +17,9 @@ public class HuffmanTree {
 
     //初始化ASCIIarray，new出所有的Node，并附初始值
     private void _InitASCIIarray_(){
-
+        for(int i = 0;i < 256;i++){
+            ASCIIarray[i] = new Node(i,0);
+        }
     }
 
     //构建HuffmanTree,返回根节点
@@ -33,6 +35,13 @@ public class HuffmanTree {
     //将HuffmanCode存到txt中
     private void _SaveHuffmanCode_(){
 
+    }
+
+    public void _Main_HuffmanTree(){
+        _InitASCIIarray_();
+        for (int i = 0; i < ASCIIarray.length; i++) {
+            System.out.println(ASCIIarray[i].ASCII+" "+ASCIIarray[i].priority);
+        }
     }
 
     private class Node{
