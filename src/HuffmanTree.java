@@ -6,8 +6,11 @@ public class HuffmanTree {
     private Node[] ASCIIarray = new Node[256];
 
     //读取文件一行内容,存入_Read_Currline
-    private void _ReadFileline_(){
-
+    private void _ReadFileline_()throws Exception{
+        File file = new File("D:\f1.txt");
+    	BufferedReader br = new BufferedReader(new FileReader(file));// 读取文件
+    	_Read_Currline = br.readLine();//存入_Read_Currline
+    	br.close();
     }
 
     //计算ASCII数量
