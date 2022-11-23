@@ -1,0 +1,4 @@
+ASCII:A Frequency:7 HuffmanCode:0
+ASCII:T Frequency:5 HuffmanCode:10
+ASCII:C Frequency:2 HuffmanCode:110
+ASCII:S Frequency:4 HuffmanCode:111
