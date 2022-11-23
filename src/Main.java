@@ -2,29 +2,29 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static Scanner _Main_userinput = new Scanner(System.in);
+    private static Scanner mainuserinput = new Scanner(System.in);
 
     private static HuffmanTree huffmanTree = new HuffmanTree();
 
     public static void main(String[] args) {
-        Boolean _Main_exit = false;
-        while(!_Main_exit){
-            _Menu_();
-            int _Menu_choise = 0;
+        Boolean main_exit = false;
+        while(!main_exit){
+            Menu();
+            int menu_choise = 0;
             while(true){
-                _Menu_choise = _Main_userinput.nextInt();
-                if(_Menu_choise < 1 || _Menu_choise > 4){
+                menu_choise = mainuserinput.nextInt();
+                if(menu_choise < 1 || menu_choise > 4){
                     System.out.println("[Error]Wrong input!Please input again:");
                 }
                 else {
                     break;
                 }
             }
-            switch (_Menu_choise){
+            switch (menu_choise){
                 case 1:
                     //基本要求
                     System.out.println("Run1");
-                    huffmanTree._Main_HuffmanTree();
+                    huffmanTree.MainHuffmanTree();
                     break;
                 case 2:
                     //中级要求
@@ -35,14 +35,14 @@ public class Main {
                     System.out.println("Run3");
                     break;
                 case 4:
-                    _Main_exit = true;
+                    main_exit = true;
                     break;
             }
         }
         System.out.println("[System]Program has closed!");
     }
 
-    private static void _Menu_ (){
+    private static void Menu (){
         System.out.println("----HuffmanCode program----");
         System.out.println("[System]Welcom to use HuffmanCode program! ");
         System.out.println("[System](1)Build huffmantree");
